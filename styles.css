@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Netflix Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.main-container {
+    min-width: 1350px;
+    display: flex;
+    flex-direction: column;
+    background-color: #303030;
+    margin: 0%;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.black-bg {
+    background-color: #000;
+    padding: 4.2rem 7rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.black-bg h1 {
+    font-size: 3.125rem;
+}
+
+.black-bg h2 {
+    font-size: 1.625rem;
+}
+
+.black-bg li {
+    list-style-type: none;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+
+/*=--------------------------- Styles for the headers --------------*/
+
+.headers {
+    position: relative;
+    background: linear-gradient(rgb(2 2 2 / 90%), rgba(2, 2, 12, 0.3)), url(./images/netflixbg.jpg);
+    background-size: cover;
+    margin-bottom: 0.5rem;
+}
+
+.navbar {
+    display: flex;
+    height: 8%;
+    margin: 2rem 3rem 0rem;
+    font-family: "Bebas Neue", cursive;
+    flex-shrink: 0;
+}
+
+.navbar h1 {
+    justify-self: flex-start;
+    align-self: flex-end;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    margin-top: -0.8rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: red;
+    font-size: 57px;
+    cursor: context-menu;
+}
+
+.signin-button {
+    height: 2.45rem;
+    width: 5.7rem;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+/* >>>>>>>>>>>>>>>>>Header Contents<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.header-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 55%;
+    height: 70%;
+    margin: 10% 22%;
+    color: white;
+    text-align: center;
+    font-family: Netflix Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.header-contents h1 {
+    font-size: 4rem;
+    padding-bottom: 20px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.header-contents h2 {
+    font-size: 1.635rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-bottom: 20px;
+}
+
+.header-contents h3 {
+    font-size: 1.2rem;
+}
+
+input[type="email"] {
+    height: 64px;
+    width: 480px;
+    border: none;
+    border-top: 2px solid white;
+    padding: 0;
+    outline: none;
+}
+
+.get-started-button {
+    height: 65px;
+    width: 220px;
+    font-size: 2rem;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-bottom: 10px solid red;
+    padding: 0;
+    margin-left: -3px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+/* =========Styles for Sections======= */
+
+
+/* ======Main======= */
+
+.sections {
+    background-color: grey;
+}
+
+
+/* Styling Section1 */
+
+.section-row-animation {
+    display: flex;
+    align-items: center;
+    flex-basis: auto;
+    margin-bottom: 0.5rem;
+}
+
+.col-animation-text {
+    flex: 1 1 0;
+    width: 32%;
+}
+
+.col-animation-image {
+    position: relative;
+    flex: 1 1 0;
+    width: 32%;
+    z-index: 1;
+    max-height: 100%;
+}
+
+.animation-vid {
+    position: absolute;
+    top: 20%;
+    left: 13.5%;
+    z-index: -1;
+}
+
+.col-1 {
+    background-color: green;
+    flex: 1 1 0;
+}
+
+.col-2 {
+    background-color: lightgreen;
+    flex: 1 1 0;
+}
+
+
+/* Styling Section2 */
+
+.section-row-download {
+    align-items: center;
+    flex-basis: auto;
+    display: flex;
+    margin-bottom: 0.5rem;
+    padding: 4rem 3rem;
+    padding-top: 2.2rem;
+}
+
+.col-download-text {
+    align-self: center;
+    width: 50%;
+}
+
+.col-images {
+    position: relative;
+    width: 40%;
+}
+
+.col-images img {
+    max-height: 100%;
+}
+
+.col-animations {
+    position: absolute;
+    display: flex;
+    border: 1.5px solid gray;
+    width: 450px;
+    height: 65px;
+    border-radius: 15px;
+    padding: 10px;
+    bottom: 10%;
+    left: 15%;
+    background-color: #000;
+}
+
+#boxshot-img {
+    width: 46px;
+    height: 64px;
+}
+
+#col-animations-text {
+    justify-self: flex-start;
+    flex-grow: 2;
+    padding: 0 20px;
+}
+
+#col-animations-text p {
+    margin-block-end: 0;
+    margin-block-start: 0;
+    color: blue;
+}
+
+#col-animations-text h4 {
+    margin-block-start: 0;
+}
+
+#download-icon {
+    width: 48px;
+    height: 60px;
+}
+
+
+/* Styling Section3 */
+
+.section-row-watch {
+    display: flex;
+    margin-bottom: 0.5rem;
+    color: white;
+    flex-basis: 0;
+    flex-grow: 0;
+}
+
+.section-row-watch .text-content {
+    width: 40%;
+}
+
+
+/* ...............Styling section 4................. */
+
+.section-row-kids {
+    display: flex;
+    margin-bottom: 0.5rem;
+    padding: 4rem 3rem;
+}
+
+.col-kids-img img {
+    max-height: 100%;
+}
+
+.col-kids-text {
+    align-self: center;
+}
+
+
+/* ...............Styling section 5................. */
+
+.section-row-faq {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    padding: 4rem 24%;
+    flex-basis: 1;
+    flex-grow: 1;
+    color: white;
+    font-family: Netflix Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.faq-list-item .faq-question,
+.faq-list-item .faq-answer {
+    background: #303030;
+    margin-bottom: 0.7rem;
+    font-size: 1.625rem;
+    text-align: left;
+}
+
+.section-row-faq .faq-question {
+    border: 0;
+    font-weight: 400;
+    margin-bottom: 1px;
+    position: relative;
+    width: 100%;
+    padding: 0.8em 2.2em 0.8em 1.2em;
+}
+
+.faq-list-item button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    color: #fff;
+}
+
+.faq-list-item .faq-answer.closed {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+.faq-list-item .faq-answer.open {
+    max-height: 1200px;
+    transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+.section-row-faq input[type="email"] {
+    width: 400px;
+}
+
+
+/* ...............Styling section 6................. */
+
+.section-row-footer {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 4rem 24%;
+}
+
+.contact-links {
+    display: flex;
+    flex-grow: 1;
+    padding-left: 0;
+}
+
+.contact-links ul {
+    padding-inline-start: 0;
+}
+
+.contact-links li {
+    padding-bottom: 20px;
+}
+
+.section-row-footer a {
+    color: #737373;
+}
+
+@media screen and (max-width: 800px) {
+    .main-container {
+        max-width: 100%;
+    }
+    .section-row-animation {
+        flex-direction: column;
+        min-height: 800px;
+        justify-content: center;
+    }
+    .col-animation-image {
+        margin-left: -20%;
+    }
+}
